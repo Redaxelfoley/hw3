@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Первая задача
+        var i = 0
+        while (i <= 100) {
+            console.log(i++) //Цикл выведет все числа от 0 до 100
+        };
+        //Вторая задача 
+        const shopping_cart = [10, 20, 15, 66];
+        function totalSumm(arr) {
+            const len = arr.length;
+            let summ = 0; // я использовал let что бы ограничить видимость переменной по вашему совету
+            for (var i = 0; i < len; i++){
+                summ += shopping_cart[i]
+            };
+            return summ;
+        };
+        console.log(totalSumm(shopping_cart)); // Функция вывела 111
+        //Четвертая задача
+        for (var x = 0; x <= 9; console.log(x++)) {} //цикл for вывел все числа от 0 до 9 
+        //Пятая задача
+        var z = 1;
+        let val = 'x'
+        while (z <= 20) {
+            console.log(val)
+            val += 'x'
+            z++
+        }; 
+        // сообразил что можно сделать через цикл for, но переделывать уже не стал
+        //цикл вывел огромную пирамидку из 20 рядов как вы и просили
+    </script>
+</body>
+</html>
